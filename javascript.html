@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JS sandbox</title>
+
+</head>
+<body>
+<script>
+	alert("JS in action!");
+
+	var cToF = function(C) {
+	F=C*1.8 + 32;  
+	console.log(C + "C is " + F+"F");
+};
+	var fToC = function(F) {
+	C=(F-32)/1.8;
+	console.log(F + "F is " + C+"C");
+};
+	cToF(60);
+	fToC(45);
+
+
+
+
+function unique_char(str1)
+{
+ var str=str1;
+ var uniql="";
+ for (var x=0;x<str.length;x++)
+ {
+
+ if(uniql.indexOf(str.charAt(x))==-1)
+  {
+  uniql += str[x];  
+  
+   }
+  }
+  return uniql;  
+}  
+console.log(unique_char("aabcccddeefgghhhaabbccddaacc"));
+
+
+
+
+function alphabet_order(str)
+{
+
+ return str.split('').sort().join('');
+} 
+
+alert(alphabet_order("webmaster")); 
+
+</script>
+</body>
+</html>
